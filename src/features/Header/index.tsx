@@ -3,15 +3,15 @@ import { HeaderStyle } from './style';
 
 const Header = () => {
   const router = useRouter();
-  const routingPage = (type: string) => {
+  const PageRouting = (type: string) => {
     if (type === 'home') {
       router.push('/');
     } else if (type === 'drama') {
-      router.push('/drama');
+      router.push('/category/drama');
     } else if (type === 'movie') {
-      router.push('/movie');
+      router.push('/category/movie');
     } else if (type === 'variety') {
-      router.push('/variety');
+      router.push('/category/variety');
     } else if (type === 'signup') {
       router.push('/signup');
     } else if (type === 'login') {
@@ -25,7 +25,7 @@ const Header = () => {
         <div className="left">
           <div
             onClick={() => {
-              routingPage('home');
+              PageRouting('home');
             }}
           >
             OttPedia
@@ -34,35 +34,35 @@ const Header = () => {
         <div className="right">
           <li
             onClick={() => {
-              routingPage('drama');
+              PageRouting('drama');
             }}
           >
             드라마
           </li>
           <li
             onClick={() => {
-              routingPage('movie');
+              PageRouting('movie');
             }}
           >
             영화
           </li>
           <li
             onClick={() => {
-              routingPage('variety');
+              PageRouting('variety');
             }}
           >
             예능
           </li>
           <li
             onClick={() => {
-              routingPage('signup');
+              PageRouting('signup');
             }}
           >
             회원가입
           </li>
           <li
             onClick={() => {
-              routingPage('login');
+              PageRouting('login');
             }}
           >
             로그인
