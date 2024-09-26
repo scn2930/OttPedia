@@ -11,9 +11,9 @@ const CategoryPage = () => {
 
   return (
     <CategoryStyle>
-      <SwiperComponent type={category} routing={ItemRouting} />
-      <SwiperComponent type={category} routing={ItemRouting} />
-      <SwiperComponent type={category} routing={ItemRouting} />
+      <SwiperComponent keyValue="category1" type={category} routing={ItemRouting} />
+      <SwiperComponent keyValue="category2" type={category} routing={ItemRouting} />
+      <SwiperComponent keyValue="category3" type={category} routing={ItemRouting} />
     </CategoryStyle>
   );
 };

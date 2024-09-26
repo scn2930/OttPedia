@@ -1,6 +1,9 @@
 import SwiperComponent from '@/components/swiper';
 import { MainStyle } from './style';
 import { useRouter } from 'next/router';
+import MainSwiper from '../MainSwiper';
+import MainBottomPage from '../MainBottomPage';
+import { DummyData } from '@/assets/data';
 
 const MainPage = () => {
   const router = useRouter();
@@ -9,13 +12,8 @@ const MainPage = () => {
   };
   return (
     <MainStyle>
-      <SwiperComponent type={'main'} routing={ItemRouting} />
-      <p>드라마</p>
-      <SwiperComponent type={'drama'} routing={ItemRouting} />
-      <p>영화</p>
-      <SwiperComponent type={'movie'} routing={ItemRouting} />
-      <p>예능</p>
-      <SwiperComponent type={'variety'} routing={ItemRouting} />
+      <MainSwiper data={DummyData} type={'main'} routing={ItemRouting} />
+      <MainBottomPage data={DummyData} routing={ItemRouting} />
     </MainStyle>
   );
 };
