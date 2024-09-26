@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 export const HeaderStyle = styled.div`
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100px;
   color: white;
   .nav {
     background-color: black;

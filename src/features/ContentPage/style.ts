@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ContentStyle = styled.div`
+  padding-top: 100px;
   .back {
     width: 100%;
     height: 500px;
@@ -36,6 +37,14 @@ export const ContentStyle = styled.div`
   }
   .where {
     font-size: 1.7rem;
+    margin-bottom: 40px;
+  }
+  .runtime {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  .description {
+    font-size: 1rem;
   }
 
   .img {
@@ -50,9 +59,5 @@ export const ContentStyle = styled.div`
       width: 100%;
       height: 100%;
     }
-  }
-
-  .youtube {
-    height: 300px;
   }
 `;
