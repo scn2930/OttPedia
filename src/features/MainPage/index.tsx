@@ -1,4 +1,3 @@
-import SwiperComponent from '@/components/swiper';
 import { MainStyle } from './style';
 import { useRouter } from 'next/router';
 import MainSwiper from '../MainSwiper';
@@ -11,10 +10,12 @@ const MainPage = () => {
     router.push(`/content/${id}`);
   };
   return (
-    <MainStyle>
-      <MainSwiper data={DummyData} type={'main'} routing={ItemRouting} />
-      <MainBottomPage data={DummyData} routing={ItemRouting} />
-    </MainStyle>
+    <>
+      <MainStyle>
+        <MainSwiper data={DummyData} type={'main'} routing={ItemRouting} />
+        <MainBottomPage data={DummyData} routing={ItemRouting} />
+      </MainStyle>
+    </>
   );
 };
 

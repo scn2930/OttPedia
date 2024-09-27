@@ -6,10 +6,9 @@ interface TypeProps {
   data: any;
   type: string;
   routing: any;
-  keyValue: string;
 }
 
-const SwiperComponent = ({ data, type, routing, keyValue }: TypeProps) => {
+const SwiperComponent = ({ data, type, routing }: TypeProps) => {
   const selectedData = data.filter((target: any) => target.type === type)[0];
 
   return (
@@ -18,7 +17,7 @@ const SwiperComponent = ({ data, type, routing, keyValue }: TypeProps) => {
         <Swiper modules={[Navigation]} spaceBetween={10} slidesPerView={5} navigation>
           {selectedData?.list?.map((x: any, i: number) => {
             return (
-              <SwiperSlide key={i + `${keyValue}_${type}`}>
+              <SwiperSlide key={i + 'swiper'}>
                 <img src={x.src.src} alt="img" onClick={(e) => routing(x.id)} />
               </SwiperSlide>
             );

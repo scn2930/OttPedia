@@ -24,7 +24,6 @@ import avengers from '@/assets/img/movie/avengers.jpeg';
 import beginagain from '@/assets/img/movie/beginagain.jpg';
 import bigcitylove from '@/assets/img/movie/bigcitylove.jpg';
 import bumjacity from '@/assets/img/movie/bumjacity.jpeg';
-
 import deadpool from '@/assets/img/movie/deadpool.webp';
 import elemental from '@/assets/img/movie/elemental.webp';
 import insideout from '@/assets/img/movie/insideout.webp';
@@ -70,19 +69,19 @@ export const DummyData: any = [
     type: 'main',
     list: [
       {
-        id: 1,
+        id: 3,
         mainSrc:
           'https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/499003d9-6514-4844-b3c0-0638d36afacf/compose?format=webp&label=hero_carousel_none_300&width=2880',
         mainText:
           'https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/f9c845f4-004b-41d3-8bc1-8ce06f39a2f1/trim?format=webp&max=800%7C450',
       },
       {
-        id: 2,
+        id: 11,
         mainSrc:
           'https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/%EC%86%90%ED%95%B4%EB%B3%B4%EA%B8%B0%EC%8B%AB%EC%96%B4%EC%84%9Cbanner1920.jpg?v=1724638145',
       },
       {
-        id: 3,
+        id: 12,
         mainSrc:
           'https://poc-cf-image.cjenm.com/public/share/menumng/%EC%97%84%EC%B9%9C%EC%95%84banner19200808.jpg?v=1723096627',
       },

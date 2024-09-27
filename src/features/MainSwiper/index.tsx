@@ -10,7 +10,6 @@ interface Props {
 
 const MainSwiper = ({ data, type, routing }: Props) => {
   const selectedData = data.filter((x: any, i: number) => x.type === type)[0];
-  // console.log(Data.list, 'ssss');
 
   return (
     <>
