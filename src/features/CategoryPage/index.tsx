@@ -13,8 +13,6 @@ const CategoryPage = () => {
   return (
     <CategoryStyle>
       <SwiperComponent data={DummyData} type={category} routing={ItemRouting} />
-      <SwiperComponent data={DummyData} type={category} routing={ItemRouting} />
-      <SwiperComponent data={DummyData} type={category} routing={ItemRouting} />
     </CategoryStyle>
   );
 };

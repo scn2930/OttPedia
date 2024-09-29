@@ -45,6 +45,7 @@ export const ContentStyle = styled.div`
   }
   .description {
     font-size: 1rem;
+    line-height: 1.5;
   }
 
   .img {

@@ -10,12 +10,10 @@ const MainPage = () => {
     router.push(`/content/${id}`);
   };
   return (
-    <>
-      <MainStyle>
-        <MainSwiper data={DummyData} type={'main'} routing={ItemRouting} />
-        <MainBottomPage data={DummyData} routing={ItemRouting} />
-      </MainStyle>
-    </>
+    <MainStyle>
+      <MainSwiper data={DummyData} type={'main'} routing={ItemRouting} />
+      <MainBottomPage data={DummyData} routing={ItemRouting} />
+    </MainStyle>
   );
 };
 

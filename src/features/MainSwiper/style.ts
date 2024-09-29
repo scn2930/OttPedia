@@ -6,10 +6,21 @@ export const MainSwiperStyle = styled.div`
   width: 95%;
   height: 500px;
 
+  /* swiper navigation hover*/
+  &:hover {
+    .swiper-button-next,
+    .swiper-button-prev {
+      visibility: visible;
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    visibility: hidden;
+  }
+
   /* 화살표 크기 조정 */
   .swiper-button-next::after,
   .swiper-button-prev::after {
-    background-color: rgba(0, 0, 0, 0.3);
     color: white;
     font-size: 30px;
     font-weight: bold;

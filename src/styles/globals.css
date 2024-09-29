@@ -1,11 +1,16 @@
 * {
   box-sizing: border-box;
   padding: 0px;
-  margin: 0px;
+  margin: 0 auto;
   list-style: none;
 }
 
 body {
   color: white;
   background-color: black;
+}
+
+/* 스크롤바 제거 */
+::-webkit-scrollbar {
+  display: none;
 }
