@@ -25,24 +25,21 @@ const SwiperComponent = ({ data, tag, routing }: TypeProps) => {
       <Swiper
         modules={[Navigation]}
         spaceBetween={10}
-        slidesPerView={6}
-        // breakpoints={{
-        //   320: {
-        //     slidesPerView: 2,
-        //   },
-        //   640: {
-        //     width: 640,
-        //     slidesPerView: 3,
-        //   },
-        //   768: {
-        //     width: 768,
-        //     slidesPerView: 4,
-        //   },
-        //   1024: {
-        //     width: 1024,
-        //     slidesPerView: 6,
-        //   },
-        // }}
+        slidesPerView={2}
+        breakpoints={{
+          425: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 5,
+          },
+          1440: {
+            slidesPerView: 6,
+          },
+        }}
         speed={800}
         navigation
       >

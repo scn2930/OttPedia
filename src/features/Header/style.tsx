@@ -67,4 +67,19 @@ export const HeaderStyle = styled.div`
       margin: 5px 0;
     }
   }
+  @media (max-width: 375px) {
+    .left {
+      width: 30%;
+      font-size: 1.2rem;
+    }
+
+    .right {
+      width: 65%;
+      font-size: 0.8rem;
+    }
+
+    .right li {
+      margin: 3px 0;
+    }
+  }
 `;

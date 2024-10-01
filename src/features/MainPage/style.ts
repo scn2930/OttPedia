@@ -4,15 +4,27 @@ export const MainSwiperStyle = styled.div`
   margin: 0 auto;
   margin-bottom: 50px;
   width: 95%;
-  height: 500px;
 
   /* swiper navigation hover*/
-  &:hover {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper:hover {
+    cursor: pointer;
     .swiper-button-next,
     .swiper-button-prev {
       visibility: visible;
     }
   }
+  .swiper-wrapper {
+    min-height: 150px;
+  }
+  .swiper-slide {
+    width: 100%;
+    height: auto;
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     visibility: hidden;
@@ -22,7 +34,7 @@ export const MainSwiperStyle = styled.div`
   .swiper-button-next::after,
   .swiper-button-prev::after {
     color: white;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
   }
 
@@ -35,8 +47,13 @@ export const MainSwiperStyle = styled.div`
   }
   .mainImg {
     width: 100%;
-    height: 500px;
-    position: relative;
+    height: 100%;
+  }
+  @media only screen and (max-width: 425px) {
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 1rem;
+    }
   }
 `;
 

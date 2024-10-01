@@ -26,10 +26,11 @@ export const SwiperStyle = styled.div`
   /* swiper 스타일 */
   .swiper {
     overflow: visible;
-    height: 300px;
+    height: auto;
   }
   /* swiper navigation hover*/
   &:hover {
+    cursor: pointer;
     .swiper-button-next,
     .swiper-button-prev {
       visibility: visible;
@@ -44,8 +45,7 @@ export const SwiperStyle = styled.div`
   /* 이미지 사이즈 조절 */
   .swiper-slide img {
     width: 90%;
-    /* height: 400px; */
-    height: 100%;
+    height: auto;
     border-radius: 10%;
   }
 
@@ -66,5 +66,22 @@ export const SwiperStyle = styled.div`
     color: white;
     font-size: 30px;
     font-weight: bold;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .tag {
+      font-size: 1.5rem;
+    }
+    .more {
+      font-size: 0.8rem;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .tag {
+      font-size: 1.3rem;
+    }
+    .more {
+      font-size: 0.8rem;
+    }
   }
 `;
