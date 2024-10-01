@@ -2,10 +2,31 @@ import styled from 'styled-components';
 
 export const SwiperStyle = styled.div`
   margin-bottom: 80px;
+  width: 95%;
 
+  /* swiper 위 글자 스타일 */
+  .text {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p {
+    margin: 0;
+    padding: 0 2%;
+  }
+  .tag {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .more {
+    font-size: 1rem;
+  }
+
+  /* swiper 스타일 */
   .swiper {
     overflow: visible;
-    height: 400px;
+    height: 300px;
   }
   /* swiper navigation hover*/
   &:hover {
@@ -14,8 +35,8 @@ export const SwiperStyle = styled.div`
       visibility: visible;
     }
   }
-  .swiper-slide {
-    transition: transform 0.5s ease;
+  .swiper-slide img {
+    transition: transform 0.4s ease-in-out;
   }
   .swiper-slide:hover img {
     transform: translate(0, -20px);
