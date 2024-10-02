@@ -10,7 +10,7 @@ const CategoryPage = () => {
     router.push(`/content/${id}`);
   };
   const selectData = DummyData.find((x: any) => x.type === category);
-  console.log(selectData, 'content');
+  const allTag = Array.from(new Set(selectData.list.flatMap((x: any) => x.hash)));
 
   const dramaTag = ['최신', '인기 급상승', '역주행', '로맨스', '코미디', '액션', '스릴러', '범죄'];
   const movieTag = ['국내', '해외', '천만', '마블', '로맨스', '코미디', '액션', '스릴러', '범죄'];
@@ -19,6 +19,15 @@ const CategoryPage = () => {
   const tag = category === 'drama' ? dramaTag : category === 'movie' ? movieTag : varietyTag;
   return (
     <CategoryStyle>
+      <div className="tagsWrap">
+        {allTag?.map((x: any, i: number) => {
+          return (
+            <div className="tags" key={i + 'allTag'}>
+              {x}
+            </div>
+          );
+        })}
+      </div>
       {tag?.map((x: any, i: number) => {
         return <SwiperComponent key={i + 'tag'} data={selectData} tag={x} routing={ItemRouting} />;
       })}
