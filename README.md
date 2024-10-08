@@ -12,7 +12,7 @@
 
 ## 💻 개발 환경
 
-- 기술 스택 : JavaScript, TypeScript, React, Next.js
+- 기술 스택 : TypeScript, React, Next.js
 - 버전 관리 : GitHub
 
 <br>
